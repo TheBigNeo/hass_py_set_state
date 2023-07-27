@@ -1,4 +1,6 @@
 {
   "name": "Set Entity State Service",
-  "homeassistant": "0.90.0"
+  "homeassistant": "0.90.0",
+  "render_readme": true,
+  "country": "CH"
 }

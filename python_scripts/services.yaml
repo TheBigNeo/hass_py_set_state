@@ -11,6 +11,9 @@ set_state:
         entity:
     state:
       description: The state value
+    allow_create:
+      description: Allow the entity to be created if it does not exists (Defaults to false so mis-typed entities do not accidentally get created.)
+      example: true
     state_id:
       description: The state of this entity will be used as value
       example: light.bedroom
