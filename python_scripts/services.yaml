@@ -1,0 +1,18 @@
+# services.yaml
+set_state:
+  name: "Set State"
+  description: Set the state or other attributes for an entity.
+  fields:
+    entity_id:
+      required: true
+      description: The full entity id to update
+      example: light.bedroom
+      selector:
+        entity:
+    state:
+      description: The state value
+    state_id:
+      description: The state of this entity will be used as value
+      example: light.bedroom
+      selector:
+        entity:

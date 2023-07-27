@@ -57,9 +57,15 @@ Each call requires at least an entity_id and a state or attributes (otherwise it
 example:
 
 ```
-entity_id: sensor.random_sensor
-state: 0
-allow_create: true
+service: python_script.set_state
+data:
+ entity_id: sensor.random_sensor
+ state: "off"
+ 
+service: python_script.set_state
+data:
+ entity_id: sensor.random_sensor
+ state_id: sensor.random_other_sensor
 ```
 
 (Thanks to [@rodpayne](https://community.home-assistant.io/u/rodpayne) for the initial script:
